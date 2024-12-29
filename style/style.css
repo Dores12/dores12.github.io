@@ -1,3 +1,25 @@
+/* MAIN */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    padding: 60px 80px;
+    background: url("../images/bg-desktop.svg") hsl(257, 40%, 49%);
+}
+
+h1 {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.3rem;
+}
+
+
+/* FOOTER */
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
