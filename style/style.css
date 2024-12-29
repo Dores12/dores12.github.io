@@ -1,5 +1,7 @@
 :root {
     --bg-color: hsl(257, 40%, 49%);
+    --text-color: hsl(0, 0%, 100%);
+    --hover-color: hsl(300, 69%, 71%);
 }
 
 body {
@@ -7,7 +9,7 @@ body {
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.6;
-    color: hsl(0, 0%, 100%);
+    color: var(--text-color);
     margin: 0 auto;
     padding: 60px 90px;
     background: url("../images/bg-desktop.svg") var(--bg-color);
@@ -23,6 +25,8 @@ h1 {
 
 .logo {
     margin-bottom: 40px;
+    transform: scale(0.7);
+    margin-left: -35px;
 }
 
 /* MAIN */
@@ -31,6 +35,23 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+}
+
+.content a {
+    display: inline-block;
+    color: var(--bg-color);
+    text-decoration: none;
+    background-color: var(--text-color);
+    padding: 15px 65px;
+    margin-top: 12px;
+    border-radius: 35px;
+    box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
+   
+}
+
+.content a:hover {
+    background-color: var(--hover-color);
+    color: var(--text-color);
 }
 
 /* FOOTER */
