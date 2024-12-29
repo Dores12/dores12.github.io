@@ -11,7 +11,8 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     margin: 0 auto;
-    padding: 60px 90px;
+    margin-top: 60px;
+    padding: 0 70px;
     background: url("../images/bg-desktop.svg") var(--bg-color);
 }
 
@@ -37,6 +38,10 @@ main {
     gap: 40px;
 }
 
+.content {
+    margin-left: 40px;
+}
+
 .content a {
     display: inline-block;
     color: var(--bg-color);
@@ -46,7 +51,7 @@ main {
     margin-top: 12px;
     border-radius: 35px;
     box-shadow: rgba(0, 0, 0, 0.55) 0px 5px 15px;
-   
+    transition: all 0.5s;
 }
 
 .content a:hover {
@@ -55,6 +60,23 @@ main {
 }
 
 /* FOOTER */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2.5rem;
+}
+
+.icons p {
+    margin: 0 10px;
+    color: var(--text-color);
+    transition: all 0.5s;
+}
+.icons p:hover {
+    transform: scale(1.1);
+    color: var(--hover-color);
+}
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
