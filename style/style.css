@@ -43,9 +43,9 @@ main {
     height: auto;
 }
 
-.content {
+/* .content {
     margin-left: 40px;
-}
+} */
 
 .content a {
     display: inline-block;
@@ -72,7 +72,7 @@ main {
     flex-direction: row;
     justify-content: flex-end;
     font-size: 2.5rem;
-    gap: 30px;
+    gap: 20px;
 }
 
 .icons p {
@@ -90,9 +90,6 @@ main {
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1000px) {
-    body {
-    max-width: 80%;
-}
     main {
         display: flex;
         flex-direction: column;
@@ -102,6 +99,5 @@ main {
     }
     .icons {
         justify-content: center;
-        margin-left: 40px;
     }
 }
