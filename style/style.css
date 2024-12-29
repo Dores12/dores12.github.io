@@ -38,6 +38,11 @@ main {
     gap: 40px;
 }
 
+.img img{
+    width: 100%;
+    height: auto;
+}
+
 .content {
     margin-left: 40px;
 }
@@ -62,14 +67,15 @@ main {
 /* FOOTER */
 
 .icons {
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-size: 2.5rem;
+    gap: 30px;
 }
 
 .icons p {
-    margin: 0 10px;
     color: var(--text-color);
     transition: all 0.5s;
 }
@@ -80,3 +86,22 @@ main {
 .attribution { font-size: 11px; text-align: center; }
 
 .attribution a { color: hsl(228, 45%, 44%); }
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+    body {
+    max-width: 80%;
+}
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .content  {
+        text-align: center;
+    }
+    .icons {
+        justify-content: center;
+        margin-left: 40px;
+    }
+}
